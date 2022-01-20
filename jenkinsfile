@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t mynodeappproject/nodeapp_test:latest .'
+				sh 'docker build -t gurjer12/nodeapp_test:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push mynodeappproject/nodeapp_test:latest'
+				sh 'docker push gurjer12/nodeapp_test:latest'
 			}
 		}
 	}
